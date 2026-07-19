@@ -39,7 +39,7 @@ You can run ContextForge in two different ways depending on your workflow prefer
 Execute the engine directly from your terminal console, providing target project scopes:
 ```bash
 python contextforge.py [path_to_project] [output_file_name.md]
-
+```
 
 #### Option B: Make it an Executable Shortcut (Recommended)
 You can make the script executable so you don't have to type python every time.
