@@ -36,11 +36,16 @@ def estimate_tokens(text):
     return len(text) // 4
 
 def generate_tree(dir_path, base_path, ignored_patterns, prefix=""):
-    """Generates a text-based visual map of the directory layout structure."""
+    """Generates a text-based visual directory tree safely."""
     tree_str = ""
     try:
-        entries = sorted([e for e in os.scandir(dir_path) if not is_ignored(e.path, base_path, ignored_patterns)], key=lambda e: e.name)
-    except PermissionError:
+        # We put the scanning inside a try/except block to catch locked folders
+        entries = sorted(
+            [e for e in os.scandir(dir_path) if not is_ignored(e.path, base_path, ignored_patterns)], 
+            key=lambda e: e.name
+        )
+    except (PermissionError, OSError):
+        # If the computer says "Access Denied", we safely skip this folder!
         return ""
     
     pointers = [r"├── "] * (len(entries) - 1) + [r"└── "] if entries else []
