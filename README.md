@@ -27,9 +27,47 @@ cd contextforge
 ```
 No additional configuration or package installs are needed. Runs natively on Python 3.8+.
 ## 🚀 How to Run
+
+### Choose Your Execution Method
+
+You can run ContextForge in two different ways depending on your workflow preference:
+
+#### Option A: The Standard Way (No Setup)
+
+
+
 Execute the engine directly from your terminal console, providing target project scopes:
 ```bash
 python contextforge.py [path_to_project] [output_file_name.md]
+
+
+#### Option B: Make it an Executable Shortcut (Recommended)
+You can make the script executable so you don't have to type python every time.
+ 1. Give the file executable permissions:
+   ```bash
+   chmod +x contextforge.py
+   
+   ```
+ 2. Run it using ./:
+   ```bash
+   ./contextforge.py . context_bundle.md
+   
+   ```
+*(Optional)* If you want to use the tool from **any folder** on your machine by just typing contextforge, move it to your system binaries:
+```bash
+sudo mv contextforge.py /usr/local/bin/contextforge
+
+```
+Now you can simply run:
+```bash
+contextforge . context_bundle.md
+
+```
+```
+
+```
+
+
 
 ```
 ### Usage Examples
