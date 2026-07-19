@@ -1,0 +1,39 @@
+# ==========================================
+# 1. Python Caches and System Files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# ==========================================
+# 2. Virtual Environments (Isolation)
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+
+# ==========================================
+# 3. Code Editors & IDE Settings
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# 4. Operating System Junk
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 5. ContextForge Generated Bundles
+# ==========================================
+# This blocks the massive text files generated for the AI 
+# from cluttering your clean GitHub repository.
+context_bundle.md
+llm_context.md
+output.md
+*.context.md
