@@ -22,8 +22,8 @@ Stop wasting time copy-pasting code file-by-file into ChatGPT, Claude, or local 
 Clone down the repository or grab the `contextforge.py` file directly onto your workstation machine:
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/ContextForge.git](https://github.com/YOUR_USERNAME/ContextForge.git)
-cd ContextForge
+git clone [https://github.com/pahujamanan2011-hue/contextforge.git](https://github.com/pahujamanan2011-hue/contextforge.git)
+cd contextforge
 ```
 No additional configuration or package installs are needed. Runs natively on Python 3.8+.
 ## 🚀 How to Run
